@@ -15,7 +15,7 @@ const sf::Color BACK_COLOR_PRESSED = Color(0xC8, 0xF0, 0xC8);
 const sf::Color BORDER_COLOR_NORMAL = Color(0x80, 0xD0, 0x80);
 const sf::Color BORDER_COLOR_HOVERED = Color(0x92, 0xE0, 0x92);
 const sf::Color BORDER_COLOR_PRESSED = Color(0x50, 0xA0, 0x50);
-const int BORDER_WIDTH = 3;
+const float BORDER_WIDTH = 3.f;
 }
 
 
@@ -63,11 +63,11 @@ void SCustomButton::Draw(RenderWindow& window)
 bool SCustomButton::OnEvent(const Event& event)
 {
 	auto mouseButtonHits = [&]() {
-		Vector2f mousePoint(event.mouseButton.x, event.mouseButton.y);
+		Vector2f mousePoint(float(event.mouseButton.x), float(event.mouseButton.y));
 		return (event.mouseButton.button == sf::Mouse::Left) && DoesHit(mousePoint);
 	};
 	auto mouseMoveHits = [&]() {
-		Vector2f mousePoint(event.mouseMove.x, event.mouseMove.y);
+		Vector2f mousePoint(float(event.mouseMove.x), float(event.mouseMove.y));
 		return DoesHit(mousePoint);
 	};
 
