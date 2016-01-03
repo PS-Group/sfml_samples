@@ -4,3 +4,4 @@
 - При необходимости можно улучшить статью через pull request.
 
 [Перебор коллекции std::vector](common-issues/vector-for-loop.md)
+[Число в строку](common-issues/to-string.md)
