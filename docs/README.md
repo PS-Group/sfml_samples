@@ -4,5 +4,7 @@
 - При необходимости можно улучшить статью через pull request.
 
 Содержимое
+- [Как делать структуры](common-issues/structs-design.md)
 - [Перебор коллекции std::vector](common-issues/vector-for-loop.md)
 - [Число в строку](common-issues/to-string.md)
+- [Векторная алгебра](common-issues/vector-math.md)
