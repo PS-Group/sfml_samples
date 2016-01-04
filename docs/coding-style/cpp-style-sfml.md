@@ -100,7 +100,7 @@ struct Entity
 };
 ```
 Приемлемый код:
-```
+```cpp
 struct Picture
 {
     sf::Sprite *pSprite = nullptr;
