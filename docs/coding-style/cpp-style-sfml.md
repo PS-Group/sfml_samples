@@ -50,18 +50,20 @@ int main()
 
 #### Таблица глаголов для имён функций
 
-|Доступ данным, защищённым от прямого обращения|get/set/reset|
-|Вычисление или обновление состояния|compute, calculate|
-|Поиск и замена|find, replace|
-|Вставка элемента|insert, append, push, pop, add|
-|Удаление элемента|remove, erase|
-|Создание новой структуры в динамической области памяти|new, create, make|
-|Инициализация созданной ранее структуры|init (initialize)|
-|Очистка данных и удаление указателя|delete, destroy|
-|Перемещение|move|
-|Обновление состояния|update, animate, advance|
-|Изменение размера|resize, setSize, setScale|
-|Запуск или остановка анимации или процесса|run, start, play, stop, pause, resume|
+| Задача       | Имена        |
+| ------------ | ------------ |
+| Доступ данным, защищённым от прямого обращения | get/set/reset |
+| Вычисление или обновление состояния | compute, calculate |
+| Поиск и замена | find, replace |
+| Вставка элемента | insert, append, push, pop, add |
+| Удаление элемента | remove, erase |
+| Создание новой структуры в динамической области памяти | new, create, make |
+| Инициализация созданной ранее структуры | init (initialize) |
+| Очистка данных и удаление указателя | delete, destroy |
+| Перемещение | move |
+| Обновление состояния | update, animate, advance|
+| Изменение размера | resize, setSize, setScale|
+| Запуск или остановка анимации или процесса | run, start, play, stop, pause, resume|
 
 ### Исключения в именовании
 
@@ -98,7 +100,7 @@ struct Entity
 };
 ```
 Приемлемый код:
-```
+```cpp
 struct Picture
 {
     sf::Sprite *pSprite = nullptr;
